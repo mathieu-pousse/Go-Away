@@ -1,10 +1,7 @@
-Golang
-======= <img src="">
+Golang :poop:
+=======
 
-Golang Hacks
-
-
-Golang was created by, and is maintained by [Nyah Check](https://github.com/Ch3ck), and it's my mockup work and experiments on the Golang programming language.
+Golang Hacks was created by, and is maintained by [Nyah Check](https://github.com/Ch3ck), and it's my mockup work and experiments on the Golang programming language.
 
 Feel free to check out the [license](LICENSE), and make contributions by pull requests.
 
@@ -41,13 +38,7 @@ func main() {
 Then compile it with the go tool:
 
 ```
-$ go install /path/to/file/hello
-
-```
-The command above will put an executable command named hello inside the bin directory of your workspace. Execute the command to see the greeting:
-
-```
-$ $GOPATH/bin/hello
+$ go run /path/to/file/hello.go
 
 hello, world
 
