@@ -8,10 +8,15 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/Ch3ck/hello/stringutil"
+)
+
+
 
 func main() {
 
-	fmt.Printf("hello, world")
-
+	fmt.Printf(stringutil.Reverse("!oG, olleH"))
+	println("It's currently 9.59am in the morning!")
 }
