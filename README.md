@@ -1,4 +1,4 @@
-Golang :poop:
+Golang :poop: :whale: :dolphin:
 =======
 
 Golang Hacks was created by, and is maintained by [Nyah Check](https://github.com/Ch3ck), and it's my mockup work and experiments on the Golang programming language.
@@ -19,6 +19,14 @@ Run this command as the superuser. Add '/usr/local/go/bin' to the PATH environme
 
 ```
 $ export PATH=$PATH:/usr/local/go/bin
+
+```
+
+Create a workspace on your localhost, then export the $GOPATH to point to that location.
+
+```
+$ mkdir $HOME/gowork
+$ export GOPATH=$HOME/gowork
 
 ```
 
