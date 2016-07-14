@@ -8,14 +8,10 @@
 
 package main
 
-import (
-	"fmt"
-	"github.com/Ch3ck/hello/stringutil"
-)
-
-
+import "fmt"
 
 func main() {
 
-	fmt.Printf(stringutil.Reverse("!oG, olleH"))
+	fmt.Printf("hello, world")
+
 }
