@@ -20,4 +20,3 @@ func main() {
 	
 	fmt.Println("It's over", os.Args[1])
 }
-

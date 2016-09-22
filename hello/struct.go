@@ -27,8 +27,20 @@ func main() {
 	my_data := p_data{"Abu", "Fayed", age, temp}
 	
 	print_data(my_data)
+	data := &my_data
+	add_age(data)
+	fmt.Println("Structure after pointer assignment.")
+	print_data(my_data)
 }
 
+func add_age(s *p_data) int {
+	
+	s.p_age += 10
+	s.f_name = "Nyah"
+	s.l_name = "Check"
+	
+	return 0
+}
 
 func print_data(s p_data) int {
 

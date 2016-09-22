@@ -19,7 +19,7 @@ func main() {
 	power = 9000
 	fmt.Println("It's over ", power)
 	
-	//making user of multiple var declaration
+	//making use of multiple var declaration
 	first_name, last_name := "Nyah", "Check"
 	
 	print_name(first_name)
