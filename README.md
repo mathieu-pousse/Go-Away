@@ -1,4 +1,4 @@
-Golang :poop: :whale: :dolphin:
+Golang :whale: :dolphin:
 =======
 
 Golang Hacks was created by, and is maintained by [Nyah Check](https://github.com/Ch3ck), and it's my mockup work and experiments on the Golang programming language.
@@ -52,6 +52,16 @@ hello, world
 
 ```
 If you see the "hello, world" message then your Go installation is working.
+
+##Documentation
+
+Running the documentation on the localhost is simple
+
+```
+$ godoc -http=:6060
+
+```
+You then read the documentary from the browser [link](http://localhost:6060)
 
 ## License
 
