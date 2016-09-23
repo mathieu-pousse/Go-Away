@@ -1,4 +1,4 @@
-Go-Away :whale: :dolphin: [![Release](doc/logo.svg)](https://golang.org/doc/install)
+Go-Away  <img src="doc/logo.svg" title="Gopher">
 =======
 
 ![Go-away](doc/logo.png "Gopher") was created by, and is maintained by [Nyah Check](https://github.com/Ch3ck), and it's my mockup work and experiments on the Go programming language.
@@ -53,7 +53,7 @@ hello, world
 ```
 If you see the "hello, world" message then your Go installation is working.
 
-##Documentation [![GoDoc](doc/logo.svg)](https://golang.org/doc/)
+##Documentation
 
 Running the documentation on the localhost is simple
 
