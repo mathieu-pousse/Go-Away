@@ -1,0 +1,64 @@
+/**
+ * Filename: struct.go
+ * Author: Nyah Check
+ * Usage: Experiments on stuctures.
+ * Licence: GNU PL 2016
+ */
+package main
+
+import (
+
+	"fmt"
+)
+
+type student_info struct {
+	Name string
+	St_ID string
+	Dept string
+	Age int
+	height float32
+}
+
+func (s *student_info) add_name() int{
+	s.Name = "Nyah Check"
+	return 0
+} 
+
+func (s *student_info) add_id() int {
+
+	s.St_ID = "FE12A025"
+	s.Dept = "Computer Engineering"
+	return 0
+}
+
+func (s *student_info) add_bio() int {
+
+	s.Age = 25
+	s.height = 1.92
+	
+	return 0
+}
+
+func (s * student_info) print_info() {
+
+	fmt.Println("Student information: ")
+	fmt.Printf("Name: %s", s.Name)
+	fmt.Printf("\nID: %s", s.St_ID)
+	fmt.Printf("\nDepartment: %s", s.Dept)
+	fmt.Printf("\nAge: %d\t Height: %.2f\n", s.Age, s.height);
+
+}
+
+
+func main() {
+
+	var student student_info
+	fmt.Println("Student details before constructors.")
+	student.print_info()
+	student.add_name()
+	student.add_id()
+	student.add_bio()
+	fmt.Println("Student details after constructors.")
+	student.print_info()
+	
+}
