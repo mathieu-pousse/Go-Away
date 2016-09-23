@@ -49,7 +49,22 @@ func (s * student_info) print_info() {
 
 }
 
+/**
+ * Adding constructor for student_info object.
+ */
+func new_student(name string, id string, dept string, age int, ht float32) *student_info {
 
+	return &student_info {
+	
+		Name: name,
+		St_ID: id,
+		Dept: dept,
+		Age: age,
+		height: ht,
+	}
+
+	
+}
 func main() {
 
 	var student student_info
@@ -60,5 +75,10 @@ func main() {
 	student.add_bio()
 	fmt.Println("Student details after constructors.")
 	student.print_info()
+	
+	fmt.Println("New Student added with constructor.")
+	new_st := new(student_info)
+	new_st = new_student("Tekang Check", "SM120154", "Accounting", 23, 1.89)
+	new_st.print_info();
 	
 }
