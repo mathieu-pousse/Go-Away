@@ -1,7 +1,7 @@
 /**
  * Filename: struct.go
  * Author: Nyah Check
- * Usage: Experiments on stuctures.
+ * Usage: Experiments on constructors.
  * Licence: GNU PL 2016
  */
 package main

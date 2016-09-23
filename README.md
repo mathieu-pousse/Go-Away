@@ -1,7 +1,7 @@
-Golang :whale: :dolphin:
+Go-Away :whale: :dolphin: [![Release](doc/logo.svg)](https://golang.org/doc/install)
 =======
 
-Golang Hacks was created by, and is maintained by [Nyah Check](https://github.com/Ch3ck), and it's my mockup work and experiments on the Golang programming language.
+![Go-away](doc/logo.png "Gopher") was created by, and is maintained by [Nyah Check](https://github.com/Ch3ck), and it's my mockup work and experiments on the Go programming language.
 
 Feel free to check out the [license](LICENSE), and make contributions by pull requests.
 
@@ -53,7 +53,7 @@ hello, world
 ```
 If you see the "hello, world" message then your Go installation is working.
 
-##Documentation
+##Documentation [![GoDoc](doc/logo.svg)](https://golang.org/doc/)
 
 Running the documentation on the localhost is simple
 
