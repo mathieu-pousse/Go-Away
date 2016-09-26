@@ -13,4 +13,4 @@
   install:
     - go get github.com/golang/lint/golint
   script:
-    - go build -v
+    - go build hello/linkedlist.go
