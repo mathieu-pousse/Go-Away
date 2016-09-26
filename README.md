@@ -1,6 +1,7 @@
 Go-Away
 =======
-[![Travis CI](https://travis-ci.com/Ch3ck/Go-Away.svg?branch=master)](https://travis-ci.com/Ch3ck/Go-Away)
+[![Travis CI](https://travis-ci.com/Ch3ck/Go-Away.svg?token=GwAmyd4534EQBN7d9ZzP&branch=master)](https://travis-ci.com/Ch3ck/Go-Away)
+
 
 ![Go-away](doc/logo.png "Gopher") was created by, and is maintained by [Nyah Check](https://github.com/Ch3ck), and it's my mockup work and experiments on the Go programming language.
 
