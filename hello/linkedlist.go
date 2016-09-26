@@ -27,9 +27,13 @@ func main() {
 	//students[0] = {"Nyah Check", "FE12A025", 25, "Computer Engineering"}
 	
 	scores := [4]int{78, 84, 56, 69} //students math scores.
+	
+	slides := make{[]int,10} //creates a slide structure.
+	slides[7] = 43
+	 
 
 	for _, value := range scores {
-		fmt.Printf("%d", value);
+		fmt.Printf("\n%d", value);
 	}
 
 }
