@@ -1,5 +1,6 @@
-Go-Away  <img src="doc/logo.svg" title="Gopher">
+Go-Away
 =======
+[![Travis CI](https://travis-ci.com/Ch3ck/Go-Away.svg?branch=master)](https://travis-ci.com/Ch3ck/Go-Away)
 
 ![Go-away](doc/logo.png "Gopher") was created by, and is maintained by [Nyah Check](https://github.com/Ch3ck), and it's my mockup work and experiments on the Go programming language.
 

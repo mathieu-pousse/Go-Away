@@ -26,7 +26,7 @@ scores := [4]int{78, 84, 56, 69} //students math scores.
 func main() {
 
 	for index, value := range scores {
-		
+		fmt.Printf("%d", value);
 	}
 
 }
