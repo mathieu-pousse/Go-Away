@@ -10,6 +10,7 @@ import (
 	"fmt"
 )
 
+
 type st_info struct {
 
 	Name string
@@ -18,14 +19,16 @@ type st_info struct {
 	Dept string
 }
 
-var students [10]st_info
 
-students[0] = {"Nyah Check", "FE12A025", 25, "Computer Engineering"}
-scores := [4]int{78, 84, 56, 69} //students math scores.
 
 func main() {
 
-	for index, value := range scores {
+	//var students [10]st_info
+	//students[0] = {"Nyah Check", "FE12A025", 25, "Computer Engineering"}
+	
+	scores := [4]int{78, 84, 56, 69} //students math scores.
+
+	for _, value := range scores {
 		fmt.Printf("%d", value);
 	}
 
