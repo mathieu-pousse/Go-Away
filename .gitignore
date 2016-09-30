@@ -1,7 +1,14 @@
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
+*      # ignores everything
+!*/    # unignores everything in a directory
+!*.*   # unignores all files with an extension.
+
+
 *.o
 *.a
 *.so
+# Unignore all with extensions
+*. #ignore with ex
 
 # Folders
 _obj
