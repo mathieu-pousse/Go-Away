@@ -29,4 +29,13 @@ func main() {
 		}
 		
 	}
+	
+	//tries copying information from one slice to another
+	score := []int{1,2,3, 4, 5}
+	
+	slice := score[2:4]
+	slice[0] = 948
+	fmt.Println(score)
+	fmt.Println(slice)
+	
 }
