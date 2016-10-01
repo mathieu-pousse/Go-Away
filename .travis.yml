@@ -10,7 +10,5 @@
   env:
     global:
       - GO15VENDOREXPERIMENT=1
-  install:
-    - go get github.com/golang/lint/golint
   script:
-    - go build hello/linkedlist.go
+    - make
