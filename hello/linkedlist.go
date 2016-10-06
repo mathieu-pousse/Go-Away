@@ -33,7 +33,7 @@ func main() {
 	 
 
 	for _, value := range scores {
-		fmt.Printf("\n%d", value);
+		fmt.Printf("\n%d", value)
 	}
 
 }

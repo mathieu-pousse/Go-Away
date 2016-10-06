@@ -7,9 +7,8 @@
 
 package main
 
-
 func main() {
-	
+
 	println("It's over 30 days since I was released.")
 
 }

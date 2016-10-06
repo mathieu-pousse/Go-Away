@@ -6,9 +6,7 @@
  */
 package main
 
-
 import (
-
 	"fmt"
 	"os"
 	"strconv"
@@ -16,11 +14,10 @@ import (
 
 func main() {
 
-
 	if len(os.Args) != 2 {
 		os.Exit(1)
 	}
-	
+
 	n, err := strconv.Atoi(os.Args[1])
 	if err != nil {
 		fmt.Printf("Not a valid number: ", os.Args[1])

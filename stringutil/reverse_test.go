@@ -6,7 +6,6 @@
  * Buea, Cameroon.
  */
 
-
 package stringutil
 
 import "testing"

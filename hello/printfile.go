@@ -6,14 +6,11 @@
  */
 package main
 
-
 import (
-
 	"fmt"
-	"os"
 	"io"
+	"os"
 )
-
 
 func main() {
 
@@ -21,18 +18,18 @@ func main() {
 		fmt.Println("No enough command line arguments.")
 		os.Exit(1)
 	}
-	
+
 	file, err := os.Open(os.Args[1])
 	if err != nil {
 		fmt.Println("Invalid file.", err)
 		return
 	}
-	
+
 	defer file.Close()
-	
+
 	input, err := fmt.Scan(file)
 	fmt.Printf("File Input\n\n")
-	
+
 	for err != io.EOF {
 		fmt.Println(string(input))
 		input, err = fmt.Scan(file)

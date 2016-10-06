@@ -6,36 +6,34 @@
  */
 package main
 
-
 import (
-
 	"fmt"
 )
 
 func main() {
 
 	scores := make([]int, 0, 5)
-	
+
 	c := cap(scores)
 	fmt.Println(c)
-	
+
 	for i := 0; i < 25; i++ {
 		scores = append(scores, i)
-		
+
 		//Grow array to accomodate new size
-		if ( cap(scores) != c) {
-			 c = cap(scores)
-			 fmt.Println(c)
+		if cap(scores) != c {
+			c = cap(scores)
+			fmt.Println(c)
 		}
-		
+
 	}
-	
+
 	//tries copying information from one slice to another
-	score := []int{1,2,3, 4, 5}
-	
+	score := []int{1, 2, 3, 4, 5}
+
 	slice := score[2:4]
 	slice[0] = 948
 	fmt.Println(score)
 	fmt.Println(slice)
-	
+
 }

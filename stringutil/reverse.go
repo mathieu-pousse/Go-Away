@@ -6,7 +6,6 @@
  * Buea, Cameroon.
  */
 
-
 // Package stringutil contains utility functions for working with strings.
 package stringutil
 

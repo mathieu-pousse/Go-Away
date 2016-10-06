@@ -13,8 +13,6 @@ import (
 	"github.com/Ch3ck/hello/stringutil"
 )
 
-
-
 func main() {
 
 	fmt.Printf(stringutil.Reverse("!oG, olleH"))
