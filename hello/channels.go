@@ -34,8 +34,13 @@ func main() {
 	}
 	
 	for {
-		c <- rand.Int()
-		time.Sleep(time.Millisecond * 50)
+		select {
+			case c <- rand.Int() :
+			time.Sleep(time.Millisecond * 50)
+			
+			default:
+			fmt.Println("Dropped")
+		}
 	}
 }
 
