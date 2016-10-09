@@ -1,7 +1,7 @@
 /**
  * Filename: goroutine.go
  * Author: Nyah Check
- * Usage: Experiments on Goroutines.
+ * Usage: Experiments on Goroutines. Adding Mutex's to guarantee channeling
  * Licence: GNU PL 2016
  */
 package main
@@ -9,9 +9,14 @@ package main
 import (
 	"fmt"
 	"time"
+	"sync"
 )
 
-var counter = 0
+var (
+	counter = 0
+	lock sync.Mutex
+	
+)
 
 func main() {
 
@@ -29,6 +34,8 @@ func main() {
 
 func incr() {
 
+	lock.Lock()
+	defer lock.Unlock()
 	counter++
 	fmt.Println(counter)
 }
