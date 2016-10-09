@@ -36,10 +36,11 @@ func main() {
 	for {
 		select {
 			case c <- rand.Int() :
-			time.Sleep(time.Millisecond * 50)
+				time.Sleep(time.Millisecond * 50)
 			
-			default:
-			fmt.Println("Dropped")
+			case <- time.After(time.Millisecond *100) :
+				fmt.Println("Break time")
+				time.Sleep(time.Second)
 		}
 	}
 }
