@@ -1,4 +1,4 @@
-/**
+p /**
  * Filename: goroutine.go
  * Author: Nyah Check
  * Usage: Experiments on Goroutines. Adding Mutex's to guarantee channeling
@@ -15,7 +15,7 @@ import (
 var (
 	counter = 0
 	lock sync.Mutex
-	
+
 )
 
 func main() {

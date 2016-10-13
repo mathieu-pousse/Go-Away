@@ -11,4 +11,4 @@
     global:
       - GO15VENDOREXPERIMENT=1
   script:
-    - go build hello/strconv.go
+    - go build github.com/Ch3ck/hello/hello/numbers.go

@@ -1,5 +1,5 @@
 /**
- *Filename: nubmers.go
+ *Filename: numbers.go
  * Usage: Adds numbers.
  * Author: Nyah Check
  */
