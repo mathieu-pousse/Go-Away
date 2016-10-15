@@ -1,28 +1,30 @@
 #
 #  Makefile for Go
 #
-GO_CMD=go
-GO_BUILD=$(GO_CMD) build
-GO_CLEAN=$(GO_CMD) clean
 
-# Packages
-TOP_PACKAGE_DIR := github.com/Ch3ck
-PACKAGE_LIST := hello/hello
+# Set an output prefix, which is the local directory if not specified
+PREFIX?=$(shell pwd)
+BUILDTAGS=
 
-.PHONY: all build clean fmt
+.PHONY: clean all fmt build test
+.DEFAULT: default
 
-all: build
+all: clean build fmt test
 
 build:
-	@for p in $(PACKAGE_LIST); do \
-		echo "==> Build $$p ..."; \
-		$(GO_BUILD) $(TOP_PACKAGE_DIR)/$$p || exit 1; \
-	done
+	@echo "+ $@"
+	@go build -tags "$(BUILDTAGS) cgo" .
+
+fmt:
+	@echo "+ $@"
+	@gofmt -s -l . | grep -v vendor | tee /dev/stderr
+
+test: fmt
+	@echo "+ $@"
+	@go test -v -tags "$(BUILDTAGS) cgo" $(shell go list ./... | grep -v vendor)
 
 clean:
-	@for p in $(PACKAGE_LIST); do \
-		echo "==> Clean $$p ..."; \
-		$(GO_CLEAN) $(TOP_PACKAGE_DIR)/$$p; \
-	done
+	@echo "+ $@"
+	@rm -rf NumGo
 
 # vim: set noexpandtab shiftwidth=8 softtabstop=0:
