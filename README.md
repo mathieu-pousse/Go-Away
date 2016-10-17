@@ -1,4 +1,4 @@
-Go-Away
+Go-Away [![Go Report Card](https://goreportcard.com/badge/github.com/Ch3ck/Go-Away)](https://goreportcard.com/report/github.com/Ch3ck/Go-Away)
 =======
 [![Travis CI](https://travis-ci.com/Ch3ck/Go-Away.svg?token=GwAmyd4534EQBN7d9ZzP&branch=master)](https://travis-ci.com/Ch3ck/Go-Away)
 
