@@ -1,7 +1,7 @@
 /**
  * Filename: celciusToFahr.go
  * Author: Nyah Check
- * Usage: Converts temperate from celcius to Fahrenheit
+ * Usage: Converts temperate from celsius to Fahrenheit
  * Licence: GNU GPL 2016
  */
 package main
@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	celcius = 0.0
+	celsius = 0.0
 	fahr    = 0.0
 )
 
@@ -20,10 +20,10 @@ var (
 func main() {
 	fmt.Println("This program converts the temperature from Celsius to Fahrenheit.")
 	fmt.Printf("Enter Celsius temperature: ")
-	fmt.Scanf("%f", &celcius)
+	fmt.Scanf("%f", &celsius)
 
-	fahr = 32 + 9*celcius/5
+	fahr = 32 + 9*celsius/5
 
-	fmt.Printf("Celcius temperature %.3f in Fahrenheit is: %.3f", celcius, fahr)
+	fmt.Printf("Celsius temperature %.3f in Fahrenheit is: %.3f", celsius, fahr)
 
 }
