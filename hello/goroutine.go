@@ -1,4 +1,4 @@
-p /**
+/**
  * Filename: goroutine.go
  * Author: Nyah Check
  * Usage: Experiments on Goroutines. Adding Mutex's to guarantee channeling
@@ -8,14 +8,13 @@ package main
 
 import (
 	"fmt"
-	"time"
 	"sync"
+	"time"
 )
 
 var (
 	counter = 0
-	lock sync.Mutex
-
+	lock    sync.Mutex
 )
 
 func main() {
