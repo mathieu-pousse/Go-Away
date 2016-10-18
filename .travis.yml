@@ -11,4 +11,4 @@
     global:
       - GO15VENDOREXPERIMENT=1
   script:
-    - go build github.com/Ch3ck/hello/hello/numbers.go
+    - go build github.com/Ch3ck/Go-Away/hello/numbers.go
