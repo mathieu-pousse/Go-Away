@@ -20,7 +20,7 @@ func main() {
 	for i := 0; i < 25; i++ {
 		scores = append(scores, i)
 
-		//Grow array to accomodate new size
+		//Grow array to accommodate new size
 		if cap(scores) != c {
 			c = cap(scores)
 			fmt.Println(c)
