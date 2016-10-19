@@ -14,14 +14,12 @@ Get the [Tarball](https://golang.org/doc/install?download=go1.6.2.linux-amd64.ta
 
 ```
 $ tar -C /usr/local -xzf go1.6.2.linux-amd64.tar.gz
-
 ```
 
-Run this command as the superuser. Add '/usr/local/go/bin' to the PATH environment variable. You can do this by adding this line to your /etc/profile (for a system-wide installation) or $HOME/.profile
+Run this command as the superuser. Add `/usr/local/go/bin` to the PATH environment variable. You can do this by adding this line to your /etc/profile (for a system-wide installation) or $HOME/.profile
 
 ```
 $ export PATH=$PATH:/usr/local/go/bin
-
 ```
 
 Create a workspace on your localhost, then export the $GOPATH to point to that location.
@@ -35,8 +33,9 @@ $ export GOPATH=$HOME/gowork
 
 ## Hello Go!
 
-In a file 'hello.go' write the hello world program.
+In a file `hello.go` write the hello world program.
 
+```
 package main
 
 import "fmt"
@@ -44,6 +43,7 @@ import "fmt"
 func main() {
 	fmt.Println("Hello, world")
 }
+```
 
 Then compile it with the go tool:
 
@@ -63,7 +63,7 @@ Running the documentation on the localhost is simple
 $ godoc -http=:6060
 
 ```
-You then read the documentary from the browser [link](http://localhost:6060)
+Then, you can read the documention from the browser [link](http://localhost:6060)
 
 ## License
 
